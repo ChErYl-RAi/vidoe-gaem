@@ -13,7 +13,7 @@ string NM = "";
 
 string places[7] = { "your room", "the living room", "the kitchen", "the outside", "dreamworld", ":(", "the bathroom"};
 string actions[7] = {
-    "\n   1) Sleep\n   2) Go to living room\n   3) Play a game\n   4) Pet your sleeping cat", 
+    "\n   1) Sleep\n   2) Go to living room\n   3) Play a game\n   4) Pet your sleeping cat\n   5) Jerk off", 
     "\n   1) Go to your room\n   2) Go to kitchen\n   3) Scream\n   4) Go outside",
     "\n   1) Eat food\n   2) Take your Estrogen\n   3) Go to living room\n   4) Go to bathroom", //kitchen
     "\n   1) Observe tree\n   2) Go back inside",
@@ -69,6 +69,15 @@ int main()
                 hour++;
                 hungy++;
             }
+            else if (curract == 5) { //fappies
+                NM = "You jerk your shit cutesstyle.\n+1 CUMCOINS\n\n";
+                hour++;
+                hour++;
+                hour++;
+                hour++;
+                hour++;
+                hungy++;
+            }
             else if (curract == 67) {
                 location = 5;
             }
@@ -110,6 +119,7 @@ int main()
             if (curract == 1) { //food
                 if (hungy >= 4) {
                     NM = "You eat.\n\n";
+                    hungy = 0;
                     hour++;
                     hour++;
                     mins += 30;
@@ -180,6 +190,10 @@ int main()
             if (curract == 2 or curract == 3) { //peepeepoopoo
                 NM = "You let out your bodily fluids grossstyle.\n\n";
                 hungy++;
+                hour++;
+                hour++;
+                hour++;
+                hour++;
             }
             else if (curract == 1) { //mirror
                 NM = "Yyyyyyup. That's a girl.\n\n";
